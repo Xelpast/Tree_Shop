@@ -39,6 +39,7 @@
             label1 = new Label();
             groupBox1 = new GroupBox();
             pictureBox1 = new PictureBox();
+            button2 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -124,6 +125,7 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoEllipsis = true;
             label1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(1082, 27);
             label1.Name = "label1";
             label1.Size = new Size(81, 23);
@@ -152,12 +154,24 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // button2
+            // 
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(15, 99);
+            button2.Name = "button2";
+            button2.Size = new Size(213, 29);
+            button2.TabIndex = 24;
+            button2.Text = "Добавить новый топиарий";
+            button2.UseVisualStyleBackColor = true;
+            button2.Visible = false;
+            // 
             // Main2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(1292, 590);
+            Controls.Add(button2);
             Controls.Add(pictureBox1);
             Controls.Add(groupBox1);
             Controls.Add(button6);
@@ -190,5 +204,6 @@
         private Label label1;
         private GroupBox groupBox1;
         private PictureBox pictureBox1;
+        private Button button2;
     }
 }

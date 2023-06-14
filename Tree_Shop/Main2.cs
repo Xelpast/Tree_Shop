@@ -27,6 +27,7 @@ namespace Tree_Shop
 
             Button newTopiariy = new Button();
             newTopiariy.Location = new Point(12, 100);
+            newTopiariy.ForeColor = Color.White;
             newTopiariy.Size = new Size(213, 29);
             newTopiariy.Text = "Добавить новый топиарий";
             newTopiariy.Click += newTopi_Click;
@@ -35,12 +36,14 @@ namespace Tree_Shop
             Button newCity = new Button();
             newCity.Location = new Point(49, 147);
             newCity.Size = new Size(138, 31);
+            newCity.ForeColor = Color.White;
             newCity.Text = "Добавить город";
             newCity.Click += newCity_Click;
             this.Controls.Add(newCity);
 
             TextBox searchP = new TextBox();
             searchP.Location = new Point(479, 23);
+            searchP.ForeColor = Color.White;
             searchP.Size = new Size(336, 27);
             searchP.Name = "searchP";
             this.Controls.Add(searchP);
@@ -48,6 +51,7 @@ namespace Tree_Shop
             ComboBox cityBox = new ComboBox();
             cityBox.Location = new Point(241, 22);
             cityBox.Size = new Size(177, 28);
+            cityBox.ForeColor = Color.White;
             cityBox.Name = "cityBox";
             cityBox.Items.Add("Все");
             this.Controls.Add(cityBox);
@@ -66,13 +70,14 @@ namespace Tree_Shop
             Button searchButton = new Button();
             searchButton.Location = new Point(821, 23);
             searchButton.Size = new Size(37, 29);
-            searchButton.ForeColor = Color.Gray;
+            searchButton.ForeColor = Color.White;
             searchButton.Text = "🔍";
             this.Controls.Add(searchButton);
 
             Button MyOrders = new Button();
             MyOrders.Location = new Point(904, 23);
             MyOrders.Size = new Size(140, 29);
+            MyOrders.ForeColor = Color.White;
             MyOrders.Text = "Мои заказы";
             MyOrders.Click += myOrders_Click;
             this.Controls.Add(MyOrders);
@@ -87,18 +92,21 @@ namespace Tree_Shop
             Button DeleteTopi = new Button();
             DeleteTopi.Location = new Point(62, 195);
             DeleteTopi.Size = new Size(109, 29);
+            DeleteTopi.ForeColor = Color.White;
             DeleteTopi.Text = "Удалить";
             this.Controls.Add(DeleteTopi);
 
             Label Nickname = new Label();
             Nickname.Location = new Point(1080, 25);
             Nickname.Size = new Size(81, 23);
+            Nickname.ForeColor = Color.White;
             Nickname.TextAlign = ContentAlignment.MiddleRight;
             Nickname.Text = Connection.NickUser;
             this.Controls.Add(Nickname);
 
             Button Exit = new Button();
             Exit.Location = new Point(1169, 23);
+            Exit.ForeColor = Color.White;
             Exit.Size = new Size(94, 29);
             Exit.Text = "Выйти";
             Exit.Click += Exit_Click;
